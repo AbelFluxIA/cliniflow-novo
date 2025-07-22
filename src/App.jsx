@@ -1,16 +1,13 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Layout from './Layout.jsx';
+import { useRoutes } from 'react-router-dom';
+import routes from './routes.jsx'; // Importa sua configuração de rotas
 
 function App() {
-  return (
-    <Layout>
-      <Routes>
-        <Route path="/" element={<div>Página de Dashboard aparecerá aqui</div>} />
-        <Route path="/pipeline" element={<div>Página do Pipeline aparecerá aqui</div>} />
-      </Routes>
-    </Layout>
-  );
+  // A função useRoutes vai ler seu arquivo de configuração
+  // e montar a aplicação inteira para nós, com o Layout e as páginas filhas.
+  const element = useRoutes(routes);
+
+  return element;
 }
 
 export default App;
