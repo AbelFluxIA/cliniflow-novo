@@ -1,13 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom';
-import App from './App.jsx'
-import './index.css'
+import React from 'react';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>,
-)
+function App() {
+  return (
+    <div>
+      <h1>CliniFlow CRM - Construindo do Zero</h1>
+      <p>A base do frontend está funcionando!</p>
+    </div>
+  );
+}
+
+export default App;
