@@ -1,7 +1,8 @@
 import React from 'react';
 import Layout from './Layout.jsx';
-import Dashboard from './pages/Dashboard.jsx';
-import Pipeline from './pages/Pipeline.jsx';
+// Corrigindo o caminho para apontar para DENTRO da pasta de cada página
+import Dashboard from './pages/Dashboard/Dashboard.jsx'; 
+import Pipeline from './pages/Pipeline/Pipeline.jsx';
 
 const routes = [
   {
